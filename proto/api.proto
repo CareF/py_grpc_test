@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+import "proto/info.proto";
+
+package interface;
+
+service FooService {
+  rpc Foo (FooRequest) returns (FooReply) {}
+}
+
+message FooRequest {
+    Info info = 1;
+}
+
+message FooReply {
+}
+
