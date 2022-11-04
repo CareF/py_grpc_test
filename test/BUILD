@@ -6,7 +6,8 @@ py_binary(
     name = "test_grpc",
     srcs = ["test_grpc.py"],
     deps = [
-        "//proto:py_info_proto",
-        # "//proto:py_api_grpc",
+        # "//proto:py_info_proto",
+        "//proto:py_api_grpc",
     ],
+    # legacy_create_init = False,
 )

@@ -28,5 +28,6 @@ cpp_grpc_library(
 python_grpc_library(
     name = "py_api_grpc",
     protos = [":api_proto"],
+    # output_mode = "NO_PREFIX",
 )
 
